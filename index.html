@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Icon -->
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
   </head>
   <body>
     <!-- navbar section start -->
-    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
       <div class="container">
         <a class="navbar-brand me-4" href="#">
           <img
@@ -152,7 +153,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 mb-4 mb-md-0">
             <img
-              src="./assets/images/about image.jpg"
+              src="./assets/images/About us.png"
               alt="Chendhoor Masala"
               class="img-fluid rounded"
             />
@@ -326,28 +327,12 @@
               </div>
             </div>
           </div>
-
-          <!-- Repeat above block 5 more times for total of 6 cards -->
-          <!-- Just copy-paste and change image src if needed -->
         </div>
 
-        <!-- View All Button -->
         <div class="text-center mt-5">
-          <a href="./product_list.html" class="btn btn-viewall"> View All → </a>
+          <a href="./products.html" class="btn btn-viewall"> View All → </a>
         </div>
       </div>
-
-      <!-- Optional BG Leaf Image -->
-      <img
-        src="./assets/images/Product section Bg image.png"
-        alt=""
-        class="position-absolute bottom-0 start-0 w-25 opacity-10 z-n1"
-      />
-      <img
-        src="./assets/images/Product section Bg image.png"
-        alt=""
-        class="position-absolute bottom-0 end-0 w-25 opacity-10 z-n1"
-      />
     </section>
 
     <!-- Product section end -->
@@ -442,19 +427,223 @@
             Real experiences from those who’ve added Chendhoor Masala to their
             kitchens.
           </p>
+
+          <div
+            id="testimonialsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- First slide - 3 testimonials -->
+              <div class="carousel-item active">
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                      <img
+                        src="./assets/images/review1.png"
+                        alt="Albert Flores"
+                        class="testimonial-bg"
+                      />
+                      <button class="play-btn">
+                        <i class="fas fa-play"></i>
+                      </button>
+                      <div class="testimonial-content">
+                        <h5 class="customer-name">Albert Flores</h5>
+                        <p class="customer-title">Founder of GearUp</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="testimonial-card"
+                      data-bs-toggle="modal"
+                      data-bs-target="#videoModal"
+                      data-video="courtney"
+                    >
+                      <img
+                        src="./assets/images/review2.png"
+                        alt="Courtney Henry"
+                        class="testimonial-bg"
+                      />
+                      <button class="play-btn">
+                        <i class="fas fa-play"></i>
+                      </button>
+                      <div class="testimonial-content">
+                        <h5 class="customer-name">Courtney Henry</h5>
+                        <p class="customer-title">Founder of GearUp</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="testimonial-card"
+                      data-bs-toggle="modal"
+                      data-bs-target="#videoModal"
+                      data-video="leslie"
+                    >
+                      <img
+                        src="./assets/images/review3.png"
+                        alt="Leslie Alexander"
+                        class="testimonial-bg"
+                      />
+                      <button class="play-btn">
+                        <i class="fas fa-play"></i>
+                      </button>
+                      <div class="testimonial-content">
+                        <h5 class="customer-name">Leslie Alexander</h5>
+                        <p class="customer-title">Founder of GearUp</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second slide - 3 more testimonials -->
+              <!-- <div class="carousel-item">
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="testimonial-card"
+                      data-bs-toggle="modal"
+                      data-bs-target="#videoModal"
+                      data-video="john"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=600&fit=crop&crop=face"
+                        alt="John Smith"
+                        class="testimonial-bg"
+                      />
+                      <button class="play-btn">
+                        <i class="fas fa-play"></i>
+                      </button>
+                      <div class="testimonial-content">
+                        <h5 class="customer-name">John Smith</h5>
+                        <p class="customer-title">Chef & Restaurant Owner</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="testimonial-card"
+                      data-bs-toggle="modal"
+                      data-bs-target="#videoModal"
+                      data-video="sarah"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=600&fit=crop&crop=face"
+                        alt="Sarah Johnson"
+                        class="testimonial-bg"
+                      />
+                      <button class="play-btn">
+                        <i class="fas fa-play"></i>
+                      </button>
+                      <div class="testimonial-content">
+                        <h5 class="customer-name">Sarah Johnson</h5>
+                        <p class="customer-title">Food Blogger</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="testimonial-card"
+                      data-bs-toggle="modal"
+                      data-bs-target="#videoModal"
+                      data-video="michael"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=600&fit=crop&crop=face"
+                        alt="Michael Brown"
+                        class="testimonial-bg"
+                      />
+                      <button class="play-btn">
+                        <i class="fas fa-play"></i>
+                      </button>
+                      <div class="testimonial-content">
+                        <h5 class="customer-name">Michael Brown</h5>
+                        <p class="customer-title">Home Cook Enthusiast</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+            <!-- Carousel Controls -->
+            <!-- <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Video Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="videoModalLabel">
+              Customer Testimonial
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe
+                id="testimonialVideo"
+                src=""
+                title="Customer Testimonial Video"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Our Standards & Testimonials section end -->
 
     <!-- Footer start -->
-    <!-- Footer -->
-    <footer class="footer bg-light text-dark pt-5">
+    <footer class="footer">
       <div class="container">
         <div class="row gy-4 align-items-start">
-          <!-- Logo -->
-          <div class="col-md-3 text-center text-md-start">
+          <div class="col-md-3 text-center text-md-start logo">
             <img
               src="./assets/images/Chendhoor masala logo.png"
               alt="Chendhoor Logo"
@@ -462,82 +651,80 @@
               style="max-width: 120px"
             />
           </div>
-
-          <!-- Contact Info -->
-          <div class="col-md-3 text-center text-md-start">
+          <div class="col-md-3 text-center text-md-start contact">
             <h5 class="fw-bold mb-2">Contact Us</h5>
-            <p class="mb-1">
+            <p class="mb-2">
               <strong>Chendhoor Masala Private Limited</strong>
             </p>
             <p class="mb-1">9A, S.S. Nagar Readypalayam Road</p>
             <p class="mb-1">Thanjavur</p>
             <p class="mb-1">Tamil Nadu - 613 004</p>
-            <p class="mb-2">📞 98943 11105</p>
-
-            <!-- Social Icons -->
-          </div>
-
-          <!-- App Download Text -->
-          <div class="col-md-3 text-center text-md-start">
-            <div
-              class="d-flex justify-content-center justify-content-md-start gap-2"
-            >
-              <h5 class="fw-bold mb-2">Follow us on!</h5>
-              <br />
-              <a href="#"
-                ><img
-                  src="https://img.icons8.com/fluency/48/instagram-new.png"
-                  alt="Instagram"
-                  width="32"
-              /></a>
-              <a href="#"
-                ><img
-                  src="https://img.icons8.com/color/48/youtube-play.png"
-                  alt="YouTube"
-                  width="32"
-              /></a>
-              <a href="#"
-                ><img
-                  src="https://img.icons8.com/color/48/whatsapp.png"
-                  alt="WhatsApp"
-                  width="32"
-              /></a>
-            </div>
-            <h5 class="fw-bold mb-2">Spices at Your Fingertips!</h5>
-            <p class="mb-2">Order your favorite masalas anytime, anywhere</p>
-            <h6 class="fw-semibold">Download Now</h6>
-            <a href="#">
+            <p class="mb-2">
               <img
+                src="./assets/images/phone_icon.png"
+                alt="Phone"
+                width="20"
+                height="20"
                 class="img-fluid"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                alt="Get it on Google Play"
-                style="max-width: 140px"
+              />
+              <span>98943 11105</span>
+            </p>
+          </div>
+          <div class="col-md-3 text-center text-md-start online_platforms">
+            <h5 class="mb-3">Follow Us On</h5>
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-3 mb-4"
+            >
+              <a href="#" target="_blank">
+                <img
+                  src="./assets/images/footer_instagram.png"
+                  width="24"
+                  height="24"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="./assets/images/footer_youtube.png"
+                  width="24"
+                  height="24"
+                  alt="YouTube"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="./assets/images/footer_whatsapp.png"
+                  width="24"
+                  height="24"
+                  alt="WhatsApp"
+                />
+              </a>
+            </div>
+
+            <h4 class="mb-2">Spices at Your Fingertips!</h4>
+            <p class="mb-3">Order your favorite masalas anytime, anywhere</p>
+            <a href="#" target="_blank">
+              <img
+                src="./assets/images/download.png"
+                width="200"
+                alt="Google Play"
               />
             </a>
           </div>
-
-          <!-- Mobile Image -->
-          <div class="col-md-3 text-center text-md-end">
-            <img
-              src="./assets/images/Mobile Mockup bg.png"
-              alt="App Preview"
-              class="img-fluid"
-              style="max-height: 550px; width: 800px"
-            />
-          </div>
-        </div>
-
-        <!-- Footer Bottom -->
-        <div class="text-center py-4 border-top mt-4">
-          <p class="mb-0 small text-muted">
-            © 2025 Chendhoor Masala. All Rights Reserved.
-          </p>
         </div>
       </div>
     </footer>
     <!-- Footer end -->
 
+    <!-- <p
+      class="text-center"
+      style="color: white; background: orange;"
+    >
+      ©2025. All Rights Reserved
+    </p> -->
+
     <!-- Bootstrap JS -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
