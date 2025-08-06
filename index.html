@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/Chendhoor masala logo.png"
+    />
+    <title>Chendoor Masala</title>
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Bootstrap CSS -->
@@ -30,8 +35,13 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
+          <span class="close-icon d-none">&#x2715;</span>
+          <!-- X icon -->
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -57,7 +67,10 @@
             <span class="order-now">Order Now On</span>
             <div class="social-icons d-flex">
               <div class="social-icon">
-                <a href="">
+                <a
+                  href="https://www.instagram.com/chendhoormasalaofficial/"
+                  target="_blank"
+                >
                   <img
                     src="./assets/images/Instagram icon.png"
                     alt="Instagram"
@@ -66,7 +79,7 @@
                 </a>
               </div>
               <div class="social-icon">
-                <a href="">
+                <a href="https://wa.me/9894311105" target="_blank">
                   <img
                     src="./assets/images/whatsapp icon.png"
                     alt="WhatsApp"
@@ -111,10 +124,10 @@
           <div class="carousel-item active">
             <a href="./products.html">
               <img
-              src="./assets/images/banner 1.jpg"
-              class="d-block w-100"
-              alt="Slide 1"
-            />
+                src="./assets/images/banner 1.jpg"
+                class="d-block w-100"
+                alt="Slide 1"
+              />
             </a>
           </div>
           <div class="carousel-item">
@@ -153,7 +166,7 @@
     <section id="about" class="about-section">
       <div class="container py-5">
         <div class="row align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0">
+          <div class="col-md-6 text-center mb-4 mb-md-0">
             <img
               src="./assets/images/About us.png"
               alt="Chendhoor Masala"
@@ -682,7 +695,10 @@
             <div
               class="d-flex justify-content-center justify-content-md-start gap-3 mb-4"
             >
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/chendhoormasalaofficial/"
+                target="_blank"
+              >
                 <img
                   src="./assets/images/footer_instagram.png"
                   width="24"
@@ -690,7 +706,10 @@
                   alt="Instagram"
                 />
               </a>
-              <a href="#" target="_blank">
+              <a
+                href="https://www.youtube.com/@chendhoormasala"
+                target="_blank"
+              >
                 <img
                   src="./assets/images/footer_youtube.png"
                   width="24"
@@ -698,7 +717,7 @@
                   alt="YouTube"
                 />
               </a>
-              <a href="#" target="_blank">
+              <a href="https://wa.me/9894311105" target="_blank">
                 <img
                   src="./assets/images/footer_whatsapp.png"
                   width="24"
@@ -710,13 +729,28 @@
 
             <h4 class="mb-2">Spices at Your Fingertips!</h4>
             <p class="mb-3">Order your favorite masalas anytime, anywhere</p>
-            <a href="#" target="_blank">
-              <img
-                src="./assets/images/download.png"
-                width="200"
-                alt="Google Play"
-              />
-            </a>
+            <div class="d-flex flex-column gap-3">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.ekahglobal.manam&hl=en_IN"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/download.png"
+                  width="200"
+                  alt="Google Play"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/in/app/chendhoor-masala/id6444920488"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/app store logo.png"
+                  width="200"
+                  alt="App Store"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
