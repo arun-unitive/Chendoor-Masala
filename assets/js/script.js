@@ -41,34 +41,30 @@ document.addEventListener("click", (event) => {
 
 // Handle video modal
 const videoModal = document.getElementById("videoModal");
-const videoFrame = document.getElementById("testimonialVideo");
+const reviewVideo = document.getElementById("reviewVideo");
+const videoSource = reviewVideo.querySelector("source");
 
 videoModal.addEventListener("show.bs.modal", function (event) {
   const button = event.relatedTarget;
   const videoId = button.getAttribute("data-video");
 
-  // You can replace these with actual video URLs
+  // Local video file paths
   const videoUrls = {
-    albert: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    courtney: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    leslie: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    john: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    sarah: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    michael: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    review1: "./assets/videos/review1.mp4",
+    review2: "./assets/videos/review2.mp4",
+    review3: "./assets/videos/review3.mp4",
   };
 
-  videoFrame.src = videoUrls[videoId] || "";
+  // Set video source and load
+  const selectedVideo = videoUrls[videoId] || "";
+  videoSource.src = selectedVideo;
+  reviewVideo.load(); // important!
+  reviewVideo.play(); // autoplay after loading
 });
 
+// Clear video on modal close
 videoModal.addEventListener("hide.bs.modal", function () {
-  videoFrame.src = "";
+  reviewVideo.pause();
+  reviewVideo.currentTime = 0;
+  videoSource.src = "";
 });
-
-// Auto-play carousel
-const carousel = new bootstrap.Carousel(
-  document.getElementById("testimonialsCarousel"),
-  {
-    interval: 5000,
-    wrap: true,
-  }
-);
