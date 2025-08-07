@@ -100,20 +100,18 @@ html {
   }
 
   body.nav-open {
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 
-.navbar-collapse.show {
-  position: fixed;
-  top: 70px; /* match your navbar height */
-  left: 0;
-  right: 0;
-  background-color: white;
-  z-index: 9999;
-  padding: 1rem;
-}
-
-
+  .navbar-collapse.show {
+    position: fixed;
+    top: 70px; /* match your navbar height */
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 9999;
+    padding: 1rem;
+  }
 
   .navbar-nav .nav-link {
     padding: 0.5rem 1rem;
@@ -191,6 +189,15 @@ nav .order-now {
   #about img {
     max-width: 200px;
     max-height: 200px;
+  }
+
+  .about-section .text {
+    font-family: "Spline Sans", sans-serif;
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    text-align: justify;
   }
 }
 /* about ending */
